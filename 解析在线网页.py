@@ -48,4 +48,8 @@ list_txt.write(configs)
 list_txt.close()
 
 print("更新完毕!")
+
+# 直接调用启动程序
+os.system('Shadowsocks.exe')
+
 os.system("pause")
