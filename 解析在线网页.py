@@ -3,6 +3,10 @@ import requests
 import os
 import codecs
 
+'''
+本模块适用于shadowsocks-2.5.6
+Author:ZGuangW
+'''
 url = "http://www.ishadowsocks.com/"
 info = []
 configs = ""
