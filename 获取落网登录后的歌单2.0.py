@@ -54,12 +54,14 @@ def CreatMusicListText(list_data, list_encode):
     print("列表生成完毕")
     list_txt.close()
 
+
 def main():
     url_music_list = getMusicUrlList(url_info, headers)
     print("正在解析，请稍等……")
     for url in url_music_list:
         list_data = getMusicList(url, headers)
     CreatMusicListText(list_data, list_encode)
+
 
 main()
 # 退出等待
