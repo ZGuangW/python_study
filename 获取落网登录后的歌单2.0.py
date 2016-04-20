@@ -26,7 +26,7 @@ def getMusicUrlList(url_info, headers):
 
 
 # 解析收藏列表
-def getMusicList(url_music_list, headers, data=None):
+def getMusicList(url_music_list, headers):
     wb_data_list = requests.get(url_music_list, headers=headers)
     wb_data_list.encoding = 'utf-8'
     soup_list = BeautifulSoup(wb_data_list.text, 'lxml')
@@ -46,7 +46,7 @@ def getMusicList(url_music_list, headers, data=None):
 
 # 创建歌曲列表文件
 def CreatMusicListText(list_data, list_encode):
-    list_txt = codecs.open("落网收藏歌曲列表.kgl", "w", "utf-8")
+    list_txt = codecs.open("落网收藏歌曲列表.txt", "w", "utf-8")
     # 循环写入歌曲txt
     for i in list_data:
         list_encode += '{0} - {1}\n'.format(str(i['song']), str(i['singer']))
@@ -59,6 +59,7 @@ def main():
     url_music_list = getMusicUrlList(url_info, headers)
     print("正在解析，请稍等……")
     for url in url_music_list:
+        # 循环解析各页
         list_data = getMusicList(url, headers)
     CreatMusicListText(list_data, list_encode)
 
