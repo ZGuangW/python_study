@@ -60,7 +60,7 @@ def main():
     print("正在解析，请稍等……")
     for url in url_music_list:
         # 循环解析各页
-        list_data = getMusicList(url, headers)
+         getMusicList(url, headers)
     CreatMusicListText(list_data, list_encode)
 
 
