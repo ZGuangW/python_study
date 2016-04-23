@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eebb78ee-e586-4635-99eb-8abe1a700a9f" name="默认的" comment="默认">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/爬取小猪租房网.py" />
+    <list default="true" id="eebb78ee-e586-4635-99eb-8abe1a700a9f" name="默认的" comment="新建一个爬取小猪租房网的模块">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/爬取小猪租房网.py" afterPath="$PROJECT_DIR$/爬取小猪租房网.py" />
     </list>
     <ignored path="python学习爬虫.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +17,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/python学习爬虫$.coverage" NAME="爬取小猪租房网 Coverage Results" MODIFIED="1461430560104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python学习爬虫$.coverage" NAME="爬取小猪租房网 Coverage Results" MODIFIED="1461435200901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python学习爬虫$2_0.coverage" NAME="获取落网登录后的歌单2.0 Coverage Results" MODIFIED="1461189660761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python学习爬虫$luoo.coverage" NAME="解析落网luoo期刊图片 Coverage Results" MODIFIED="1458896310457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python学习爬虫$Json.coverage" NAME="Json文件处理 Coverage Results" MODIFIED="1457391629940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -47,8 +47,8 @@
       <file leaf-file-name="爬取小猪租房网.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/爬取小猪租房网.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+            <state relative-caret-position="204">
+              <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
               <folding>
                 <element signature="e#45#74#0" expanded="true" />
               </folding>
@@ -636,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1461189732020</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="新建一个爬取小猪租房网的模块">
+      <created>1461430736315</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1461430736315</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -659,7 +666,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -693,7 +700,8 @@
     <MESSAGE value="加入直接启动" />
     <MESSAGE value="将语法做成各个方法" />
     <MESSAGE value="默认" />
-    <option name="LAST_COMMIT_MESSAGE" value="默认" />
+    <MESSAGE value="新建一个爬取小猪租房网的模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="新建一个爬取小猪租房网的模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1055,8 +1063,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/爬取小猪租房网.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        <state relative-caret-position="204">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
           <folding>
             <element signature="e#45#74#0" expanded="true" />
           </folding>

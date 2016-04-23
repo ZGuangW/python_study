@@ -13,19 +13,19 @@ info_data = []
 
 
 # ===获取列表===
-def getInfoUrlList(pageUrl, infoUrlList=None):
+def getInfoUrlList(pageUrl):
     pages = int(input('请输入需要解析的页数：'))
     pageUrlList = [pageUrl.format(str(i + 1)) for i in range(pages)]
+    temp = 1;
     for i in pageUrlList:
         web_data = requests.get(i)
         soup = BeautifulSoup(web_data.text, 'lxml')
         lists = soup.select('ul.pic_list.clearfix > li > a')
-        for i in lists:
-            list = i.get('href')
-            print(list)
-            infoUrlList.append(list)
-            print(infoUrlList)
-        time.sleep(2)
+        for j in lists:
+            infoUrlList.append(j.get('href'))
+        print('正在解析第%d页信息' % temp)
+        temp += 1
+        time.sleep(0.2)
     return infoUrlList
 
 
@@ -56,13 +56,14 @@ def getZufangInfo(infoUrl):
 
 
 # ===获取所有租房信息===
-def getAllZufangInfo(pageUrl, infoUrlList=None, info_data=None):
-    infoUrlList = getInfoUrlList(pageUrl, infoUrlList=None)
+def getAllZufangInfo(pageUrl):
+    infoUrlList = getInfoUrlList(pageUrl)
+    print('正在解析详细信息，请稍等……')
     for i in infoUrlList:
         info_data.append(getZufangInfo(i))
-        time.sleep(1)
+        time.sleep(0.3)
 
 
 if __name__ == '__main__':
-    getAllZufangInfo(pageUrl,infoUrlList,info_data)
+    getAllZufangInfo(pageUrl)
     print(info_data)
