@@ -57,7 +57,7 @@ def writeIntoText(data, file_name=None, txt_temp=None):
 if __name__ == '__main__':
     start = int(input('请输入起始页：'))
     end = int(input('请输入结束页：'))
-    file_name = str(input('请输入文件标识名：'))
+    file_name = str(start)+"-"+str(end)+"页"
     get_more_pages(start, end)
     writeIntoText(all_data, file_name, txt_temp)
     # print(all_data)
