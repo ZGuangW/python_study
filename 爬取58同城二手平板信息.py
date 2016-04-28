@@ -29,7 +29,7 @@ pic = soup.select('ul#img_smalls > li > img')
 pice = soup.select('div.col_sub.sumary > ul > li > div.su_con > span.price.c_f50')
 chengse = soup.find('div', class_='sumary').ul.li.find_next_sibling().div.find_next_sibling().span
 area = soup.select('div.col_sub.sumary > ul > li > div.su_con > span > a')
-username = soup.select('div.per_right_credit > div.userInfo > div.userName')
+username = soup.select('div.per_right_credit > div.userInfo > div.userName') #TODO 卖家是通过js获取的，这部分需要再作研究
 big_pic = []
 for i in range(len(pic)):
     big_pic.append(pic[i].get('src').replace('tiny', 'big'))
