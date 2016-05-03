@@ -49,7 +49,7 @@ def getZufangInfo(infoUrl):
         'dailyRents': dailyRents[0].get_text(),
         'housePhoto': housePhotosUrl,
         'landlords': landlords[0].get_text(),
-        'landlordsex': landlordsex[0].get('class')[0] == "member_ico" if "男" else"女",
+        'landlordsex': "男" if landlordsex[0].get('class')[0] == "member_ico" else "女",
         'landlordpic': landlordpic[0].get('src')
     }
     return data

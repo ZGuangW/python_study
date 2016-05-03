@@ -4,6 +4,7 @@
     <list default="true" id="eebb78ee-e586-4635-99eb-8abe1a700a9f" name="默认的" comment="更新爬取58同城二手平板信息webapp">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/爬取58同城二手平板信息webapp.py" afterPath="$PROJECT_DIR$/爬取58同城二手平板信息webapp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/爬取小猪租房网.py" afterPath="$PROJECT_DIR$/爬取小猪租房网.py" />
     </list>
     <ignored path="python学习爬虫.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,14 +18,14 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/python学习爬虫$.coverage" NAME="爬取小猪租房网 Coverage Results" MODIFIED="1461526564144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python学习爬虫$.coverage" NAME="爬取小猪租房网 Coverage Results" MODIFIED="1462285503152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python学习爬虫$2_0.coverage" NAME="获取落网登录后的歌单2.0 Coverage Results" MODIFIED="1461189660761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python学习爬虫$knewone_com.coverage" NAME="爬取knewone.com页面 Coverage Results" MODIFIED="1461768912297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python学习爬虫$luoo.coverage" NAME="解析落网luoo期刊图片 Coverage Results" MODIFIED="1458896310457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python学习爬虫$58.coverage" NAME="爬取58同城二手平板信息 Coverage Results" MODIFIED="1462113645541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python学习爬虫$Json.coverage" NAME="Json文件处理 Coverage Results" MODIFIED="1457391629940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python学习爬虫$ss_3_0_updateconfig.coverage" NAME="ss-3.0-updateconfig Coverage Results" MODIFIED="1460230794913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/python学习爬虫$58webapp.coverage" NAME="爬取58同城二手平板信息webapp Coverage Results" MODIFIED="1462272698680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python学习爬虫$58webapp.coverage" NAME="爬取58同城二手平板信息webapp Coverage Results" MODIFIED="1462289328783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -50,8 +51,8 @@
       <file leaf-file-name="爬取58同城二手平板信息webapp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/爬取58同城二手平板信息webapp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+            <state relative-caret-position="463">
+              <caret line="85" column="48" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -62,7 +63,7 @@
       <file leaf-file-name="爬取knewone.com页面.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/爬取knewone.com页面.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
+            <state relative-caret-position="231">
               <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
               <folding>
                 <element signature="e#62#91#0" expanded="true" />
@@ -74,8 +75,8 @@
       <file leaf-file-name="爬取小猪租房网.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/爬取小猪租房网.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306">
-              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+            <state relative-caret-position="191">
+              <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -108,10 +109,10 @@
         <option value="$PROJECT_DIR$/gui-config.json" />
         <option value="$PROJECT_DIR$/获取登陆后的信息.py" />
         <option value="$PROJECT_DIR$/获取落网登录后的歌单2.0.py" />
-        <option value="$PROJECT_DIR$/爬取小猪租房网.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/爬取58同城二手平板信息.py" />
         <option value="$PROJECT_DIR$/爬取knewone.com页面.py" />
+        <option value="$PROJECT_DIR$/爬取小猪租房网.py" />
         <option value="$PROJECT_DIR$/爬取58同城二手平板信息webapp.py" />
       </list>
     </option>
@@ -554,9 +555,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.爬取58同城二手平板信息webapp" />
-        <item index="1" class="java.lang.String" itemvalue="Python.爬取58同城二手平板信息" />
-        <item index="2" class="java.lang.String" itemvalue="Python.爬取knewone.com页面" />
-        <item index="3" class="java.lang.String" itemvalue="Python.爬取小猪租房网" />
+        <item index="1" class="java.lang.String" itemvalue="Python.爬取小猪租房网" />
+        <item index="2" class="java.lang.String" itemvalue="Python.爬取58同城二手平板信息" />
+        <item index="3" class="java.lang.String" itemvalue="Python.爬取knewone.com页面" />
         <item index="4" class="java.lang.String" itemvalue="Python.获取落网登录后的歌单2.0" />
       </list>
     </recent_temporary>
@@ -750,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1462130644371</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="更新爬取58同城二手平板信息webapp">
+      <created>1462272872438</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1462272872438</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1131,14 +1139,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/爬取小猪租房网.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/爬取58同城二手平板信息.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1151,7 +1151,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/爬取knewone.com页面.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
+        <state relative-caret-position="231">
           <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
           <folding>
             <element signature="e#62#91#0" expanded="true" />
@@ -1159,10 +1159,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/爬取小猪租房网.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/爬取58同城二手平板信息webapp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
+        <state relative-caret-position="463">
+          <caret line="85" column="48" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
