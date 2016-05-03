@@ -3,7 +3,7 @@ import requests
 import time
 
 url = 'http://bj.58.com/pbdn/'
-url2 = 'http://m.58.com/bj/pingbandiannao/25871058942921x.shtml?psid=193647322191642777870054513&entinfo=25871058942921_0&iuType=p_0&PGTID=0d305a36-0000-11eb-fb89-13a11e7334fc&ClickID=2'
+url2 = 'http://m.58.com/gz/pingbandiannao/25878919428300x.shtml?psid=136864525191662776445085120&entinfo=25878919428300_0&iuType=p_0&PGTID=0d309654-0000-31c0-2681-0a198434ddb4&ClickID=1'
 headers = {
     'User-Agent': 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.23 Mobile Safari/537.36'
 }
@@ -35,7 +35,7 @@ def getPageLinks(url, headers, start_page, end_page, links=None):
 
 
 # ===爬取详细信息===
-def getPageInfo(url, headers):
+def getPageInfo(url, headers, all_data=None):
     web_data = requests.get(url, headers)
     soup = BeautifulSoup(web_data.text, 'lxml')
     title = soup.select('div.title_area.bbOnepx > div.left_tit > h1')
@@ -49,24 +49,29 @@ def getPageInfo(url, headers):
     desc = soup.select('div.good_detail > div.detail_param > p.desc')
     username = soup.select('div.person_area > div.person_detail > div > p.pname')
     meta_taglist_temp = []
+    pic_temp = []
     for i in meta_taglist:
         meta_taglist_temp.append(i.get_text(strip=True))
-    print(meta_taglist_temp)
-    for title, meta_taglist, rel_time, count, pic, price, price_pre, address, desc, username in zip(title, meta_taglist_temp,
-                                                                                                    rel_time, count,
-                                                                                                    pic, price,
-                                                                                                    price_pre, address,
-                                                                                                    desc, username):
-        data = {
-            'title': title.get_text(strip=True),
-            'meta_taglist': meta_taglist #todo 将列表嵌入到字典无法，有待修改
-        }
-        print(data)
-
+    for i in pic:
+        pic_temp.append(i.get('ref'))
+    data = {
+        'title': title[0].get_text(strip=True),
+        'meta_taglist': meta_taglist_temp,  # todo 将列表嵌入到字典无法，有待修改
+        'rel_time': rel_time[0].get_text(strip=True)[4:],
+        'count': count[0].get_text(),
+        'pic': pic_temp,
+        'price': price[0].get_text(strip=True).split('元')[0],
+        'price_pre': price_pre[0].get_text(strip=True).split('元')[0],
+        'address': address[0].get_text(strip=True),
+        'desc': desc[0].get_text().split('  ')[1],
+        'username': username[0].get_text(strip=True)
+    }
+    all_data.append(data)
 
 if __name__ == '__main__':
     # getPageLinks(url, headers, 1, 1, links)
     # print(links)
     # print(len(links))
 
-    getPageInfo(url2, headers)
+    getPageInfo(url2, headers,all_data)
+    print(all_data)
