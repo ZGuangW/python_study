@@ -31,7 +31,7 @@ def getPageLinks(url, headers, start_page, end_page, links=None):
         if (one % 5 == 0):
             time.sleep(3)
         else:
-            time.sleep(1)
+            time.sleep(0.3)
 
 
 # ===爬取详细信息===
@@ -63,7 +63,7 @@ def getPageInfo(url, headers, all_data=None):
         'price': price[0].get_text(strip=True).split('元')[0],
         'price_pre': price_pre[0].get_text(strip=True).split('元')[0] if len(price_pre) > 0 else '',
         'address': address[0].get_text(strip=True),
-        'desc': desc[0].get_text().split('  ')[1],
+        'desc': desc[0].get_text(strip=True)[0:desc[0].get_text(strip=True).index("联系我时")].replace('\u200b',' '),
         'username': username[0].get_text(strip=True)
     }
     all_data.append(data)
@@ -74,13 +74,13 @@ if __name__ == '__main__':
     end_page = int(input('请输入结束页：'))
     getPageLinks(url, headers, start_page, end_page, links)
     link = 1
+    print('==============\n正在解析第%s条链接' % str(link))
     for i in links:
-        print('==========\n正在解析第%s条链接' % str(link))
         getPageInfo(i, headers, all_data)
         if link % 5 == 0:
             time.sleep(3)
         else:
-            time.sleep(0.5)
+            time.sleep(0.3)
         link += 1
     print(all_data)
-    print(len(all_data))#todo 获取数据含有\u200b字符，待处理
+    print(len(all_data))
