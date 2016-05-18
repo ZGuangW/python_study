@@ -48,8 +48,12 @@ list_txt = codecs.open("gui-config.json", "w", "utf-8")
 list_txt.write(configs)
 list_txt.close()
 
-# 直接调用启动程序
-os.system('Shadowsocks.exe')
+try:
+    # 直接调用启动程序
+    os.system('Shadowsocks.exe')
+    print("更新并启动成功")
+except BaseException:
+    print("启动Shadowsocks失败")
 
 # 退出程序
 sys.exit()
