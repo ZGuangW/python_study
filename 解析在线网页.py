@@ -11,7 +11,12 @@ Author:ZGuangW
 url = "http://www.ishadowsocks.com/"
 info = []
 configs = ""
-wb_data = requests.get(url)
+try:
+    wb_data = requests.get(url)
+except BaseException:
+    print("程序异常")
+    os.system('pause')
+    sys.exit()
 wb_data.encoding = "utf-8"
 soup = BeautifulSoup(wb_data.text, 'lxml')
 server_sties = soup.select('#free > div > div > div > h4:nth-of-type(1)')
